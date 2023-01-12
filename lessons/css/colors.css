@@ -1,0 +1,13 @@
+.howto p{
+    display: absolute;
+}
+
+.colorex {
+    color: darkgrey;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: 10%;
+    padding: 10px;
+    padding-right: 25px;
+}

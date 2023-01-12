@@ -1,0 +1,19 @@
+.lessonls {
+    text-decoration: none;
+    border-style: solid;
+    width: fit-content;
+    padding: 10px;
+}
+
+a.first {
+    text-decoration: underline;
+    color: black;
+    display: block;
+}
+
+a.nfirst {
+    text-decoration: underline;
+    color: black;
+    padding-top: 10px;
+    display: block;
+}
