@@ -13,20 +13,55 @@
         <h3>Static</h3>
         <p>The static attribute treats the element(s) like its stuck in place. No rule to move the element will work.</p>
     </div>
+    <hr>
     <div class="relative-div">
         <h3>Relative</h3>
         <p>The relative attribute treats teh element(s) </p>
     </div>
+    <hr>
     <div class="absolute-div">
         <h3>Absolute</h3>
         <p>The absolute attribute treats the element(s) like it never existed</p>
     </div>
+    <hr>
     <div class="absulute-div">
         <h3>TBF</h3>
     </div>
-    <div class="absulute-div">
-        <h3>TBF</h3>
+    <hr>
+    <div class="none-div">
+        <h3>None</h3>
+        <p>None does what it does it doesn't display.</p>
+        <h4>Example:</h4>
+        <h5>HTML</h5>
+        <pre>
+            <code>
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class="html-ex"&gt;
+            &lt;p>Hi I'm here&lt;/p&gt;
+            &lt;p id="hide">Hi you can't see me&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+            </code>
+        </pre>
+        <h5>CSS: style.css</h5>
+        <pre>
+    .html-ex #hide {
+        display: none;
+    }
+        </pre>
+        <h5>If you don't understand the syntax go to <a href="./selectors.html">Selectors</a></h6>
+        <h4>That will dysplay as below:</h4>
+        <div>
+            <p>Hi I'm here</p>
+            <p style="display: none;">Hi Hi you can't see me</p>
+        </div>
     </div>
+    <hr>
     <footer>
         <span><a href="./colors.html">Previous Lesson</a> | <a href="">Next Lesson</a></span>
     </footer>
