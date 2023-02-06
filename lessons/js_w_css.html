@@ -3,10 +3,67 @@
 <head>
     <title>JS with CSS</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/js_w_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body id="main-body">
     <div>
-        <button id="cbtn">Click me I turn red</button>  
+        <button id="cbtn">Click Me I Turn Red</button>
+        <br>
+        <br>
+        <button id="bbtn">Click Me I Turn The Page Blue</button>
+        <br>
+        <br>
+        <button id="codebtn"><span><i class="fa-solid fa-code"></i></span> Click Me to Show JS Code</button>
+        <div id="code" style="display: none;">
+            <p>js_w_css.js</p>
+            <pre>
+btn_yes = true
+bg_changed = false
+hidden = true
+
+document.getElementById("cbtn").onclick = changetored;
+document.getElementById("bbtn").onclick = changebackground;
+document.getElementById("codebtn").onclick = show_hide_code;
+
+function changetored() {
+    if (btn_yes) {
+        document.getElementById("cbtn").style.backgroundColor = "red";
+        document.getElementById("cbtn").innerHTML = "Click Me again I turn Back";
+        btn_yes = false
+    } else {
+        document.getElementById("cbtn").style.backgroundColor = "green";
+        document.getElementById("cbtn").innerHTML = "Click me I turn red";
+        btn_yes = true
+    }
+}
+
+function changebackground() {
+    if (!bg_changed) {
+        document.getElementById("main-body").style.backgroundColor = "blue";
+        document.getElementById("bbtn").innerHTML = "Click Me Again To Change Back";
+        bg_changed = true
+    } else {
+        document.getElementById("main-body").style.backgroundColor = "white";
+        document.getElementById("bbtn").innerHTML = "Click Me I Turn The Page Blue";
+        bg_changed = false
+    }
+}
+
+function show_hide_code() {
+    if (hidden) {
+        document.getElementById("code").style.display = ""
+        document.getElementById("codebtn").innerHTML ="&lt;span&gt;&lt;i class="fa-solid fa-code"&gt;&lt;/i&gt;&lt;/span&gt; Click Me to Hide JS Code"
+        hidden = false
+    } else {
+        document.getElementById("code").style.display = "none"
+        document.getElementById("codebtn").innerHTML = "&lt;span&gt;&lt;i class="fa-solid fa-code"&gt;&lt;/i&gt;&lt;/span&gt; Click Me to Show JS Code"
+        hidden = true
+    }
+}
+            </pre>
+        </div>
     </div>
     <script src="./js/js_w_css.js"></script>
 </body>

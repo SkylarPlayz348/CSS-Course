@@ -1,0 +1,23 @@
+#cbtn {
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 4px;
+}
+
+#bbtn {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 4px;
+}
+
+#codebtn {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 4px;
+}
